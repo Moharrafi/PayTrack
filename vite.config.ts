@@ -26,18 +26,18 @@ export default defineConfig(({ mode }) => {
         registerType: 'autoUpdate',
         includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
         manifest: {
-          name: 'Kasbonku',
-          short_name: 'Kasbonku',
+          name: 'PayTrack',
+          short_name: 'PayTrack',
           description: 'Aplikasi Manajemen Hutang Karyawan',
           theme_color: '#ffffff',
           icons: [
             {
-              src: 'pwa-192x192.png',
+              src: 'logo.png',
               sizes: '192x192',
               type: 'image/png'
             },
             {
-              src: 'pwa-512x512.png',
+              src: 'logo.png',
               sizes: '512x512',
               type: 'image/png'
             }
