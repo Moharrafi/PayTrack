@@ -1,20 +1,77 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# 💸 PayTrack - Employee Loan Management System
 
-This contains everything you need to run your app locally.
+**PayTrack** (formerly KasbonKu) is a modern web application designed to manage employee loans and repayments efficiently. It features a responsive UI, real-time data tracking, and a secure cloud database backend.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1tZHWA_JS7OWxI3l_24Ce4oO67blDyNEw
+![PayTrack Banner](https://via.placeholder.com/1200x400?text=PayTrack+Employee+Loan+System)
 
-## Run Locally
+## ✨ Features
 
-**Prerequisites:**  Node.js
+- **Dashboard**: Visual summary of total loans, active borrowers, and recent transactions.
+- **Employee Management**: Add, view, and manage employee profiles including salary and contact info.
+- **Loan Tracking**:
+  - Request new loans with customizable terms.
+  - Track remaining balances and repayment progress.
+  - Status badges (Active, Paid, Rejected).
+- **Transaction History**: Record repayments and view detailed loan history.
+- **PWA Ready**: Installable on mobile and desktop devices.
+- **Cloud Database**: Data is securely stored in a MySQL database (Aiven).
 
+## 🛠️ Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Frontend**: [React](https://react.dev/), [Vite](https://vitejs.dev/), [Tailwind CSS](https://tailwindcss.com/)
+- **Backend**: [Node.js](https://nodejs.org/), [Express](https://expressjs.com/)
+- **Database**: [MySQL](https://www.mysql.com/) (Hosted on Aiven)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [pnpm](https://pnpm.io/) (recommended) or npm
+- MySQL Database credentials (or use the provided `db.sql` to set up your own).
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/Moharrafi/PayTrack.git
+    cd PayTrack
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    pnpm install
+    ```
+
+3.  **Environment Setup**
+    Create a `.env` file in the root directory and add your database credentials:
+    ```env
+    DB_HOST=your-db-host.com
+    DB_USER=your-db-user
+    DB_PASSWORD=your-db-password
+    DB_NAME=kasbon
+    DB_PORT=3306
+    ```
+
+4.  **Database Setup**
+    If setting up a new database, run the SQL commands found in `db.sql` in your MySQL client to create the necessary tables.
+
+5.  **Run the Application**
+    Start both the frontend and backend concurrently:
+    ```bash
+    npm run dev
+    ```
+    The app will be available at `http://localhost:5173`.
+    The server works at `http://localhost:3001`.
+
+## 📱 Screenshots
+
+| Dashboard | Employee Detail | Loan List |
+|:---:|:---:|:---:|
+| *(Add Screenshot)* | *(Add Screenshot)* | *(Add Screenshot)* |
+
+## 📄 License
+
+This project is licensed under the MIT License.
